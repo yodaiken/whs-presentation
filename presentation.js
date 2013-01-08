@@ -32,7 +32,7 @@
     function LOG(msg) {
         if (!DEBUG)
             return;
-        if (console.log)
+        if (console && console.log)
             console.log(msg);
         else
             alert("(no console.log) " + msg);
